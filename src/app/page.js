@@ -1,5 +1,5 @@
 'use client'
-import React, { Suspense, useEffect } from 'react'
+import React, { Suspense, useEffect as UseEffect } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 // import stars from '../../public/stars.jp'
@@ -88,7 +88,7 @@ const page = () => {
     pluto)
   const pointLight = new THREE.PointLight('#f0bf7f', 100000, 30000);
   Scene.add(pointLight);
-  useEffect(() => {
+  UseEffect(() => {
 
 
     function animate() {
